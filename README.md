@@ -23,7 +23,7 @@
 
 <img width="580" alt="image" src="https://github.com/user-attachments/assets/adc381cd-fd94-4200-a75c-3529269f8e36">
 
-- 군집화가 잘 안됨 -> 아래와 같은 방법을 진행 
+- 군집화가 잘 안됨(기각)
 
 
 # 2. 카드 등급 별로 Cluster 군집화 진행 
