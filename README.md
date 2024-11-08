@@ -36,11 +36,19 @@
 - 23: 플래티넘 -> 3점
 - 24: 골드 -> 2점
 - 25: 해당없음 -> 1점
+
+  
 ## 3-2. 각 Cluster의 평균을 구함
+
 <img width="378" alt="image" src="https://github.com/user-attachments/assets/a221a707-d196-4f04-bdfa-997f9a9a600d">
+
+
 ## 3-3. 결과
-- 평군값이 높은 값이 나올수록 높은 분위로 할당 
+- 평군값이 높은 값이 나올수록 높은 분위로 할당
+
+  
 <img width="226" alt="image" src="https://github.com/user-attachments/assets/85e6b22f-940a-4308-bbfb-462901b07b96">
+
 - Cluster 3 : 5분위
 - Cluster 0 : 4분위
 - Cluster 4 : 3분위
