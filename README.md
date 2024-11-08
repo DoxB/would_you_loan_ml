@@ -19,7 +19,7 @@
 <img width="580" alt="image" src="https://github.com/user-attachments/assets/adc381cd-fd94-4200-a75c-3529269f8e36">
 
 # 2. Cluster 별 카드 등급 Count
-### 우리카드 데이터의 카드 등급을 이용하여 클러스터 진행
+### 카드 데이터의 카드 등급을 이용하여 클러스터 진행
 - 21: VVIP
 - 22: VIP
 - 23: 플래티넘
