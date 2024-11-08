@@ -33,7 +33,7 @@
 
 <img width="378" alt="image" src="https://github.com/user-attachments/assets/a221a707-d196-4f04-bdfa-997f9a9a600d">
 
-# 카드등급 가중치 순서
+# 4. 카드등급 가중치 순서
 
 - Cluster 3 : 5분위
 - Cluster 0 : 4분위
