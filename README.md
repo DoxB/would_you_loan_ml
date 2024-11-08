@@ -19,16 +19,29 @@
 - 음식·숙박
 - 기타
 
-## 1-2. 결과
+## 1-2. k-means 엘보 스코어 결과
+
+- 최적의 k값은 5개 
+
+![image](https://github.com/user-attachments/assets/ff9542e4-f133-451c-9927-f33866df32e9)
+
+
+## 1-3. 결과
 
 <img width="580" alt="image" src="https://github.com/user-attachments/assets/adc381cd-fd94-4200-a75c-3529269f8e36">
 
-- 군집화가 잘 안됨(기각)
+각 클러스터 별 SEQ 갯수
+
+Cluster 0: 143531 SEQ
+Cluster 1: 364771 SEQ
+Cluster 2: 160898 SEQ
+Cluster 3: 35941 SEQ
+Cluster 4: 90215 SEQ
 
 
-# 2. 카드 등급 별로 Cluster 군집화 진행 
+# 2. 카드 등급을 사용함한 소득 분위 예측
 
-## 2-1. 카드 등급 별 군집 갯수
+## 2-1. 클러스터별 카드 등급 갯수
 
 <img width="378" alt="image" src="https://github.com/user-attachments/assets/baaa7ea2-6f43-4423-b449-a67459bce801">
 
@@ -39,7 +52,7 @@
 - 25: 해당없음 
 
 
-## 2-3. 카드 등급결로 가중치를 부여
+## 2-2. 카드 등급결로 가중치를 부여
 - 21: VVIP -> 5점 
 - 22: VIP -> 4점
 - 23: 플래티넘 -> 3점
@@ -47,15 +60,13 @@
 - 25: 해당없음 -> 1점
 
 
-## 3-3. 가중치 부여 이후 Cluster별로 평균을 구함
+## 2-3. 가중치 부여 이후 Cluster별로 갯수 평균을 구함
 
 <img width="378" alt="image" src="https://github.com/user-attachments/assets/a221a707-d196-4f04-bdfa-997f9a9a600d">
 
 
 ## 2-4. 결과
 - 평군값이 높은 값이 나올수록 높은 분위로 할당
-
-<img width="226" alt="image" src="https://github.com/user-attachments/assets/85e6b22f-940a-4308-bbfb-462901b07b96">
 
 - Cluster 3 : 5분위
 - Cluster 0 : 4분위
