@@ -1,4 +1,5 @@
-# 카테고리별 Cluster 군집화
+# 1. 카테고리별 Cluster 군집화
+###다음과 같은 카테고리별로 군집화를 진행함 
 - 성별
 - 나이
 - 카드 총 사용액
@@ -17,7 +18,8 @@
 
 <img width="580" alt="image" src="https://github.com/user-attachments/assets/adc381cd-fd94-4200-a75c-3529269f8e36">
 
-# Cluster 별 카드 등급 Count
+# 2. Cluster 별 카드 등급 Count
+###우리카드 데이터의 카드 등급을 이용하여 클러스터 진행
 - 21: VVIP
 - 22: VIP
 - 23: 플래티넘
@@ -26,7 +28,8 @@
 
 <img width="378" alt="image" src="https://github.com/user-attachments/assets/baaa7ea2-6f43-4423-b449-a67459bce801">
 
-# Cluster 별 회원 수
+# 3. Cluster 별 회원 수
+
 
 <img width="378" alt="image" src="https://github.com/user-attachments/assets/a221a707-d196-4f04-bdfa-997f9a9a600d">
 
