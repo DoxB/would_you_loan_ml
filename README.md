@@ -21,10 +21,11 @@
 
 ## 1-2. k-means 엘보 스코어 결과
 
-- 최적의 k값은 5개 
+- k값 3 ~ 10 군집화 진행
 
 ![image](https://github.com/user-attachments/assets/ff9542e4-f133-451c-9927-f33866df32e9)
 
+- 최적의 k값은 5개
 
 ## 1-3. 결과
 
