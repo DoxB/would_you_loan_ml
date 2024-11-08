@@ -32,10 +32,10 @@
 
 # 카드등급 가중치 순서
 
-- Cluster 4 : 5분위
-- Cluster 1 : 4분위
-- Cluster 5 : 3분위
-- Cluster 3 : 2분위
-- Cluster 2 : 1분위
+- Cluster 3 : 5분위
+- Cluster 0 : 4분위
+- Cluster 4 : 3분위
+- Cluster 2 : 2분위
+- Cluster 1 : 1분위
 
 <img width="226" alt="image" src="https://github.com/user-attachments/assets/85e6b22f-940a-4308-bbfb-462901b07b96">
