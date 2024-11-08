@@ -33,14 +33,14 @@
 
 각 클러스터 별 SEQ 갯수
 
-Cluster 0: 143531 SEQ
-Cluster 1: 364771 SEQ
-Cluster 2: 160898 SEQ
-Cluster 3: 35941 SEQ
-Cluster 4: 90215 SEQ
+- Cluster 0: 143531 SEQ
+- Cluster 1: 364771 SEQ
+- Cluster 2: 160898 SEQ
+- Cluster 3: 35941 SEQ
+- Cluster 4: 90215 SEQ
 
 
-# 2. 카드 등급을 사용함한 소득 분위 예측
+# 2. 카드 등급을 사용한 소득 분위 예측
 
 ## 2-1. 클러스터별 카드 등급 갯수
 
