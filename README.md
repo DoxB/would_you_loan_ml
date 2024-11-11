@@ -1,3 +1,11 @@
+# 부동산 날씨 생성완료[경기~서울]
+
+- 지도 줌에 따라 나타낼 데이터를 보여줘야함
+  
+<img width="1010" alt="image" src="https://github.com/user-attachments/assets/11aa9e43-e1cb-41af-bbe3-15fddd21c946">
+
+---
+# 소득예측 모델 폐기...
 # 1. 소비 카테고리별 Cluster 군집화 진행
 
 ## 1-1. 다음과 같은 카테고리별로 군집화를 진행함 
