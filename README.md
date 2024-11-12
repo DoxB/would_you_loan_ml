@@ -1,5 +1,14 @@
+# MLOps 구축
+1. 뉴스기사 라벨링
+2. 모델 : 1) 로지스틱 회귀 2) SVM 3) Navive 모델 사용
+3. 진행중---
 
-# 구별 뉴스기사 감정분석 (부동산 리포트 전용 기사) // 11.12.(화)
+<img width="1090" alt="image" src="https://github.com/user-attachments/assets/8367b8c3-3d28-40bc-b6c9-a5f3c4e10320">
+
+
+
+
+# 구별 뉴스기사 감정분석 (부동산 리포트 전용 기사) // 11.12.(화) 오전
 
 <img width="585" alt="image" src="https://github.com/user-attachments/assets/bd837ca4-6ff4-4ad8-8f42-2063255a8f37">
 
