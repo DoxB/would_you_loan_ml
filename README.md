@@ -1,4 +1,16 @@
-# 부동산 날씨 생성완료[경기~서울]
+
+# 구별 뉴스기사 감정분석 (부동산 리포트 전용 기사) // 11.12.(화)
+
+<img width="585" alt="image" src="https://github.com/user-attachments/assets/bd837ca4-6ff4-4ad8-8f42-2063255a8f37">
+
+<img width="485" alt="image" src="https://github.com/user-attachments/assets/e6684054-c285-4aae-82e3-f3e56b09a85e">
+
+
+<img width="751" alt="image" src="https://github.com/user-attachments/assets/3e84ef74-f0fa-456f-8808-ddfdc7bbcbfe">
+
+---
+
+# 부동산 날씨 생성완료[경기~서울] / 11.11.(월)
 
 - 지도 줌에 따라 나타낼 데이터를 보여줘야함
   
