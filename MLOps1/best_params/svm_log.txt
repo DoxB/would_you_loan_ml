@@ -1,0 +1,28 @@
+cacae8efef5a
+*** Reading local file: /opt/airflow/logs/dag_id=tuning_pipeline_svm/run_id=scheduled__2024-11-14T05:00:00+00:00/task_id=train_model_C_1_kernel_rbf_gamma_scale/attempt=1.log
+[2024-11-14, 16:23:18 KST] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tuning_pipeline_svm.train_model_C_1_kernel_rbf_gamma_scale scheduled__2024-11-14T05:00:00+00:00 [queued]>
+[2024-11-14, 16:23:18 KST] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tuning_pipeline_svm.train_model_C_1_kernel_rbf_gamma_scale scheduled__2024-11-14T05:00:00+00:00 [queued]>
+[2024-11-14, 16:23:18 KST] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-14, 16:23:18 KST] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2024-11-14, 16:23:18 KST] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-14, 16:23:18 KST] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): train_model_C_1_kernel_rbf_gamma_scale> on 2024-11-14 05:00:00+00:00
+[2024-11-14, 16:23:18 KST] {standard_task_runner.py:55} INFO - Started process 309 to run task
+[2024-11-14, 16:23:18 KST] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'tuning_pipeline_svm', 'train_model_C_1_kernel_rbf_gamma_scale', 'scheduled__2024-11-14T05:00:00+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/svm_tuning_pipeline.py', '--cfg-path', '/tmp/tmpdkks92hp']
+[2024-11-14, 16:23:18 KST] {standard_task_runner.py:83} INFO - Job 37: Subtask train_model_C_1_kernel_rbf_gamma_scale
+[2024-11-14, 16:23:18 KST] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-14, 16:23:18 KST] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/utils/sqlalchemy.py:121 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-14, 16:23:18 KST] {task_command.py:389} INFO - Running <TaskInstance: tuning_pipeline_svm.train_model_C_1_kernel_rbf_gamma_scale scheduled__2024-11-14T05:00:00+00:00 [running]> on host cacae8efef5a
+[2024-11-14, 16:23:18 KST] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=tuning_pipeline_svm
+AIRFLOW_CTX_TASK_ID=train_model_C_1_kernel_rbf_gamma_scale
+AIRFLOW_CTX_EXECUTION_DATE=2024-11-14T05:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-11-14T05:00:00+00:00
+[2024-11-14, 16:39:53 KST] {logging_mixin.py:137} INFO - 모델 학습 완료: {'C': 1, 'kernel': 'rbf', 'gamma': 'scale'} -> 정확도: 0.8012329223592136
+[2024-11-14, 16:39:53 KST] {python.py:177} INFO - Done. Returned value was: None
+[2024-11-14, 16:39:53 KST] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=tuning_pipeline_svm, task_id=train_model_C_1_kernel_rbf_gamma_scale, execution_date=20241114T050000, start_date=20241114T072318, end_date=20241114T073953
+[2024-11-14, 16:39:53 KST] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-11-14, 16:39:53 KST] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
