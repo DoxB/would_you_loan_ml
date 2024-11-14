@@ -1,4 +1,4 @@
-# Sentiment Analysis Model Training Pipeline
+# Sentiment Analysis Model Training Pipeline // 11.14.(목) 오전
 
 이 프로젝트는 뉴스 감성 분석을 위해 다양한 머신러닝 모델을 학습하고, 하이퍼파라미터 튜닝을 수행하는 Airflow 파이프라인을 포함하고 있습니다. 주요 알고리즘은 **로지스틱 회귀(Logistic Regression)**, **서포트 벡터 머신(SVM)**, 그리고 **랜덤 포레스트(Random Forest)**입니다. 각 알고리즘은 Airflow 파이프라인으로 실행되며, 모델의 성능을 평가하고 최적의 하이퍼파라미터를 찾는 방식으로 동작합니다.
 
