@@ -1,0 +1,19 @@
+version: '3'
+services:
+  airflow:
+    build:
+      context: .
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./dags/data:/opt/airflow/dags/data  # 데이터 파일 마운트
+      - ./dags/models:/opt/airflow/dags/models  # 모델 파일 마운트
+      - ./dags/metrics:/opt/airflow/dags/metrics  # 메트릭스 파일 마운트
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    ports:
+      - "8080:8080"
+    command: ["airflow", "standalone"]
