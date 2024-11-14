@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Logistic Regression Pipeline (logistic_regression_pipeline.py)
+## 1. Logistic Regression Pipeline (LogisticRegression_tuning_pipeline.py)
 ### 설명
 로지스틱 회귀를 사용하여 뉴스 감성 분석 모델을 학습합니다. `C` (정규화 강도)와 `max_iter` (최대 반복 횟수) 하이퍼파라미터를 그리드 탐색으로 최적화합니다. 모델의 성능은 정확도로 평가하며, 최적의 하이퍼파라미터 조합을 선택하여 저장합니다.
 
@@ -19,7 +19,7 @@
 - 저장 경로: `/models/logistic_regression`
 
 
-## 2. Support Vector Machine Pipeline (svm_pipeline.py)
+## 2. Support Vector Machine Pipeline (svm_tuning_pipeline.py)
 ### 설명
 서포트 벡터 머신(SVM)을 사용하여 뉴스 감성 분석 모델을 학습합니다. `C` (정규화 강도)와 `kernel` (커널 함수) 하이퍼파라미터를 조정하여 모델의 최적 성능을 찾습니다. 정확도에 따라 각 모델을 평가하며, 가장 높은 정확도를 기록한 모델을 선택합니다.
 
@@ -31,7 +31,7 @@
 ### 파일 구조
 - 저장 경로: `/models/svm`
 
-## 3. Random Forest Pipeline (random_forest_pipeline.py)
+## 3. Random Forest Pipeline (RandomForestClassifier_tuning_pipeline.py)
 ### 설명
 랜덤 포레스트를 사용하여 뉴스 감성 분석 모델을 학습합니다. 하이퍼파라미터 그리드에는 `n_estimators` (트리 개수), `max_depth` (트리 최대 깊이), `min_samples_split` (노드를 분할하기 위한 최소 샘플 수)가 포함됩니다. 정확도를 기준으로 각 모델을 평가하며, 가장 높은 정확도를 가진 모델을 최종 선택합니다.
 
