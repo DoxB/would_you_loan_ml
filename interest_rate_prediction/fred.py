@@ -1,6 +1,7 @@
 import pandas as pd
 from fredapi import Fred
 
+
 # FRED API Key
 fred_api_key = "-"  # Replace with your actual FRED API key
 fred = Fred(api_key=fred_api_key)
