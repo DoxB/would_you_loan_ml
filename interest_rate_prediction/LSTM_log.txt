@@ -1,0 +1,175 @@
+304810c3107a
+*** Reading local file: /opt/airflow/logs/dag_id=lstm_hyperparameter_tuning/run_id=scheduled__2024-11-18T00:00:00+00:00/task_id=log_results/attempt=1.log
+[2024-11-19, 01:34:11 UTC] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: lstm_hyperparameter_tuning.log_results scheduled__2024-11-18T00:00:00+00:00 [queued]>
+[2024-11-19, 01:34:11 UTC] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: lstm_hyperparameter_tuning.log_results scheduled__2024-11-18T00:00:00+00:00 [queued]>
+[2024-11-19, 01:34:11 UTC] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-19, 01:34:11 UTC] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2024-11-19, 01:34:11 UTC] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-19, 01:34:11 UTC] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): log_results> on 2024-11-18 00:00:00+00:00
+[2024-11-19, 01:34:11 UTC] {standard_task_runner.py:55} INFO - Started process 2518 to run task
+[2024-11-19, 01:34:11 UTC] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'lstm_hyperparameter_tuning', 'log_results', 'scheduled__2024-11-18T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/timeseries_model_training.py', '--cfg-path', '/tmp/tmpdd18su4n']
+[2024-11-19, 01:34:11 UTC] {standard_task_runner.py:83} INFO - Job 7: Subtask log_results
+[2024-11-19, 01:34:11 UTC] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-19, 01:34:11 UTC] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/utils/sqlalchemy.py:121 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-19, 01:34:11 UTC] {task_command.py:389} INFO - Running <TaskInstance: lstm_hyperparameter_tuning.log_results scheduled__2024-11-18T00:00:00+00:00 [running]> on host c2be7eaf1a2c
+[2024-11-19, 01:34:11 UTC] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=lstm_hyperparameter_tuning
+AIRFLOW_CTX_TASK_ID=log_results
+AIRFLOW_CTX_EXECUTION_DATE=2024-11-18T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-11-18T00:00:00+00:00
+[2024-11-19, 01:34:11 UTC] {timeseries_model_training.py:229} INFO - 
+=== Training Results ===
+[2024-11-19, 01:34:11 UTC] {timeseries_model_training.py:231} INFO - 
+Rank 1:
+[2024-11-19, 01:34:11 UTC] {timeseries_model_training.py:232} INFO - Hyperparameters: {'units': 50, 'dropout': 0.2, 'batch_size': 32, 'learning_rate': 0.001, 'epochs': 100}
+[2024-11-19, 01:34:11 UTC] {timeseries_model_training.py:233} INFO - RMSE: 1.6531
+[2024-11-19, 01:34:11 UTC] {timeseries_model_training.py:234} INFO - MAE: 1.4198
+[2024-11-19, 01:34:11 UTC] {timeseries_model_training.py:231} INFO - 
+Rank 2:
+[2024-11-19, 01:34:11 UTC] {timeseries_model_training.py:232} INFO - Hyperparameters: {'units': 100, 'dropout': 0.3, 'batch_size': 64, 'learning_rate': 0.0001, 'epochs': 100}
+[2024-11-19, 01:34:11 UTC] {timeseries_model_training.py:233} INFO - RMSE: 2.0002
+[2024-11-19, 01:34:11 UTC] {timeseries_model_training.py:234} INFO - MAE: 1.6806
+[2024-11-19, 01:34:11 UTC] {python.py:177} INFO - Done. Returned value was: Results logged successfully
+[2024-11-19, 01:34:11 UTC] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=lstm_hyperparameter_tuning, task_id=log_results, execution_date=20241118T000000, start_date=20241119T013411, end_date=20241119T013411
+[2024-11-19, 01:34:11 UTC] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-11-19, 01:34:11 UTC] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-19, 01:44:44 UTC] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: lstm_hyperparameter_tuning.log_results scheduled__2024-11-18T00:00:00+00:00 [queued]>
+[2024-11-19, 01:44:44 UTC] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: lstm_hyperparameter_tuning.log_results scheduled__2024-11-18T00:00:00+00:00 [queued]>
+[2024-11-19, 01:44:44 UTC] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-19, 01:44:44 UTC] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2024-11-19, 01:44:44 UTC] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-19, 01:44:44 UTC] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): log_results> on 2024-11-18 00:00:00+00:00
+[2024-11-19, 01:44:44 UTC] {standard_task_runner.py:55} INFO - Started process 873 to run task
+[2024-11-19, 01:44:44 UTC] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'lstm_hyperparameter_tuning', 'log_results', 'scheduled__2024-11-18T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/timeseries_model_training.py', '--cfg-path', '/tmp/tmpzn5z6jdp']
+[2024-11-19, 01:44:44 UTC] {standard_task_runner.py:83} INFO - Job 7: Subtask log_results
+[2024-11-19, 01:44:44 UTC] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-19, 01:44:44 UTC] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/utils/sqlalchemy.py:121 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-19, 01:44:44 UTC] {task_command.py:389} INFO - Running <TaskInstance: lstm_hyperparameter_tuning.log_results scheduled__2024-11-18T00:00:00+00:00 [running]> on host 74878d830d1c
+[2024-11-19, 01:44:44 UTC] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=lstm_hyperparameter_tuning
+AIRFLOW_CTX_TASK_ID=log_results
+AIRFLOW_CTX_EXECUTION_DATE=2024-11-18T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-11-18T00:00:00+00:00
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:240} INFO - 
+=== Training Results ===
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:242} INFO - 
+Rank 1:
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:243} INFO - Hyperparameters: {'units': 50, 'dropout': 0.2, 'batch_size': 32, 'learning_rate': 0.001, 'epochs': 100}
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:244} INFO - RMSE: 1.5138
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:245} INFO - MAE: 1.3140
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:246} INFO - R²: -0.3667
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:251} INFO - Final Training Loss: 0.4243
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:252} INFO - Final Validation Loss: 0.1509
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:242} INFO - 
+Rank 2:
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:243} INFO - Hyperparameters: {'units': 100, 'dropout': 0.3, 'batch_size': 64, 'learning_rate': 0.0001, 'epochs': 100}
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:244} INFO - RMSE: 1.6048
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:245} INFO - MAE: 1.4220
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:246} INFO - R²: -0.5358
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:251} INFO - Final Training Loss: 1.0780
+[2024-11-19, 01:44:44 UTC] {timeseries_model_training.py:252} INFO - Final Validation Loss: 0.6959
+[2024-11-19, 01:44:44 UTC] {python.py:177} INFO - Done. Returned value was: Results logged successfully
+[2024-11-19, 01:44:44 UTC] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=lstm_hyperparameter_tuning, task_id=log_results, execution_date=20241118T000000, start_date=20241119T014444, end_date=20241119T014444
+[2024-11-19, 01:44:44 UTC] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-11-19, 01:44:44 UTC] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-19, 02:07:15 UTC] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: lstm_hyperparameter_tuning.log_results scheduled__2024-11-18T00:00:00+00:00 [queued]>
+[2024-11-19, 02:07:15 UTC] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: lstm_hyperparameter_tuning.log_results scheduled__2024-11-18T00:00:00+00:00 [queued]>
+[2024-11-19, 02:07:15 UTC] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-19, 02:07:15 UTC] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2024-11-19, 02:07:15 UTC] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-19, 02:07:15 UTC] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): log_results> on 2024-11-18 00:00:00+00:00
+[2024-11-19, 02:07:15 UTC] {standard_task_runner.py:55} INFO - Started process 2304 to run task
+[2024-11-19, 02:07:15 UTC] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'lstm_hyperparameter_tuning', 'log_results', 'scheduled__2024-11-18T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/timeseries_model_training.py', '--cfg-path', '/tmp/tmp9log2rjv']
+[2024-11-19, 02:07:15 UTC] {standard_task_runner.py:83} INFO - Job 8: Subtask log_results
+[2024-11-19, 02:07:15 UTC] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-19, 02:07:15 UTC] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/utils/sqlalchemy.py:121 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-19, 02:07:15 UTC] {task_command.py:389} INFO - Running <TaskInstance: lstm_hyperparameter_tuning.log_results scheduled__2024-11-18T00:00:00+00:00 [running]> on host 304810c3107a
+[2024-11-19, 02:07:16 UTC] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=lstm_hyperparameter_tuning
+AIRFLOW_CTX_TASK_ID=log_results
+AIRFLOW_CTX_EXECUTION_DATE=2024-11-18T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-11-18T00:00:00+00:00
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:252} INFO - 
+=== Training Results ===
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:254} INFO - 
+Rank 1:
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:255} INFO - Hyperparameters: {'units': 256, 'dropout': 0.2, 'batch_size': 32, 'learning_rate': 0.001, 'epochs': 200}
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:256} INFO - RMSE: 1.5052
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:257} INFO - MAE: 1.5003
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:258} INFO - R²: -151.4895
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:263} INFO - Final Training Loss: 0.0742
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:264} INFO - Final Validation Loss: 1.2057
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:269} INFO - 
+Predictions vs Actual Values:
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1154, Actual: 3.8300
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1196, Actual: 3.8300
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1246, Actual: 3.7400
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1322, Actual: 3.6900
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1357, Actual: 3.6500
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1369, Actual: 3.5700
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1338, Actual: 3.6000
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1289, Actual: 3.6000
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1205, Actual: 3.5400
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1165, Actual: 3.5000
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1163, Actual: 3.5200
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 2.1157, Actual: 3.4300
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:254} INFO - 
+Rank 2:
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:255} INFO - Hyperparameters: {'units': 64, 'dropout': 0.15, 'batch_size': 8, 'learning_rate': 0.005, 'epochs': 200}
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:256} INFO - RMSE: 1.7085
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:257} INFO - MAE: 1.7041
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:258} INFO - R²: -195.4567
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:263} INFO - Final Training Loss: 0.1990
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:264} INFO - Final Validation Loss: 1.4532
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:269} INFO - 
+Predictions vs Actual Values:
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9167, Actual: 3.8300
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9181, Actual: 3.8300
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9266, Actual: 3.7400
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9270, Actual: 3.6900
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9237, Actual: 3.6500
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9158, Actual: 3.5700
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9136, Actual: 3.6000
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9143, Actual: 3.6000
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9168, Actual: 3.5400
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9255, Actual: 3.5000
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9283, Actual: 3.5200
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9245, Actual: 3.4300
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:254} INFO - 
+Rank 3:
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:255} INFO - Hyperparameters: {'units': 128, 'dropout': 0.1, 'batch_size': 16, 'learning_rate': 0.01, 'epochs': 200}
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:256} INFO - RMSE: 1.7658
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:257} INFO - MAE: 1.7590
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:258} INFO - R²: -208.8443
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:263} INFO - Final Training Loss: 0.2641
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:264} INFO - Final Validation Loss: 1.2164
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:269} INFO - 
+Predictions vs Actual Values:
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.8057, Actual: 3.8300
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.8004, Actual: 3.8300
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.8141, Actual: 3.7400
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.8533, Actual: 3.6900
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.8686, Actual: 3.6500
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.8911, Actual: 3.5700
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9035, Actual: 3.6000
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.9020, Actual: 3.6000
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.8917, Actual: 3.5400
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.8901, Actual: 3.5000
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.8882, Actual: 3.5200
+[2024-11-19, 02:07:16 UTC] {timeseries_model_training.py:271} INFO - Predicted: 1.8839, Actual: 3.4300
+[2024-11-19, 02:07:16 UTC] {python.py:177} INFO - Done. Returned value was: Results logged successfully
+[2024-11-19, 02:07:16 UTC] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=lstm_hyperparameter_tuning, task_id=log_results, execution_date=20241118T000000, start_date=20241119T020715, end_date=20241119T020716
+[2024-11-19, 02:07:16 UTC] {local_task_job.py:159} INFO - Task exited with return code 0
+[2024-11-19, 02:07:16 UTC] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
