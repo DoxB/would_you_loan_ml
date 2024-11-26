@@ -1,0 +1,47 @@
+# 서비스 상태 확인
+sudo systemctl status fastapi
+
+# 서비스 시작
+sudo systemctl start fastapi
+
+# 서비스 중지
+sudo systemctl stop fastapi
+
+# 서비스 재시작
+sudo systemctl restart fastapi
+
+# 로그 확인
+sudo journalctl -u fastapi
+
+# 실시간 로그 확인
+sudo journalctl -u fastapi -f
+
+---
+
+sudo nano /etc/systemd/system/fastapi.service
+
+---
+[Unit]
+Description=FastAPI Credit Score Service
+After=network.target
+
+[Service]
+User=renopark9
+WorkingDirectory=/home/renopark9/jupyter_worksapce/credit_score/fastapi
+Environment="PATH=/home/renopark9/miniconda3/envs/loan/bin"
+ExecStart=/home/renopark9/miniconda3/envs/loan/bin/uvicorn app.main:app --host 0.0.0.0 --port 30049
+
+[Install]
+WantedBy=multi-user.target
+---
+# systemd 재로드
+sudo systemctl daemon-reload
+
+# 서비스 시작
+sudo systemctl start fastapi
+
+# 부팅 시 자동 시작 설정
+sudo systemctl enable fastapi
+
+# 서비스 상태 확인
+sudo systemctl status fastapi
