@@ -1,24 +1,25 @@
 CREATE TABLE credit_score_evaluation (
-    user_id INT PRIMARY KEY,          -- 고유 ID
-    idx INT NOT NULL AUTO_INCREMENT,                 -- 고유 인덱스
-    tot_use_am BIGINT NOT NULL,                      -- 총 사용 금액
-    ues_income DECIMAL(5, 2) NOT NULL,               -- 소득 대비 소비 = 총 소비 / 소득
-    crdsl_use_am BIGINT NOT NULL,                    -- 신용대출 사용 금액
-    cnf_use_am BIGINT NOT NULL,                      -- 신용카드 사용량
-    plsanit_am BIGINT NOT NULL,                      -- 공공요금
-    fsbz_am BIGINT NOT NULL,                         -- 금융 상품 금액
-    trvlec_am BIGINT NOT NULL,                       -- 여행 지출 금액
-    dan_rt DECIMAL(5, 2) NOT NULL,                   -- 위험도 (비율)
-    dist_am BIGINT NOT NULL,                         -- 배달 금액
-    life_stage_dan TINYINT NOT NULL,                 -- 생애주기 위험 (0 또는 1)
-    clothgds_am BIGINT NOT NULL,                     -- 의류 소비 금액
-    att_ym INT NOT NULL,                             -- 연월 (YYYYMM)
-    debt BIGINT NOT NULL,                            -- 부채
-    debt_ratio DECIMAL(5, 2) NOT NULL,               -- 부채비율 (비율)
-    income BIGINT NOT NULL,                          -- 소득
-    quarter_seq INT NOT NULL,                        -- 분기 시퀀스
-    UNIQUE KEY(idx)                                  -- idx 필드에 고유 키 제약 조건 추가
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+    user_id INT NOT NULL,                        -- 유저 ID
+    idx INT NOT NULL AUTO_INCREMENT,            -- 자동 증가 인덱스
+    tot_use_am BIGINT NOT NULL,                 -- 총 사용 금액
+    ues_income DECIMAL(5,2) NOT NULL,           -- 소득 대비 사용 비율
+    crdsl_use_am BIGINT NOT NULL,               -- 신용대출 사용 금액
+    cnf_use_am BIGINT NOT NULL,                 -- 신용카드 사용 금액
+    plsanit_am BIGINT NOT NULL,                 -- 공공요금
+    fsbz_am BIGINT NOT NULL,                    -- 금융상품 금액
+    trvlec_am BIGINT NOT NULL,                  -- 여행 지출 금액
+    dan_rt DECIMAL(5,2) NOT NULL,               -- 위험도
+    dist_am BIGINT NOT NULL,                    -- 배달비
+    life_stage_dan TINYINT NOT NULL,            -- 생애주기 위험도
+    clothgds_am BIGINT NOT NULL,                -- 의류 소비 금액
+    att_ym INT NOT NULL,                        -- 연월
+    debt BIGINT NOT NULL,                       -- 부채 금액
+    debt_ratio DECIMAL(5,2) NOT NULL,           -- 부채 비율
+    income BIGINT NOT NULL,                     -- 소득
+    quarter_seq INT NOT NULL,                   -- 분기 시퀀스
+    PRIMARY KEY (idx)                           -- 기본 키는 idx
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 -- 1~3등급 데이터
 INSERT INTO credit_score_evaluation (user_id, tot_use_am, ues_income, crdsl_use_am, cnf_use_am, plsanit_am, fsbz_am, trvlec_am, dan_rt, dist_am, life_stage_dan, clothgds_am, att_ym, debt, debt_ratio, income, quarter_seq) VALUES (1, 800000, 0.6, 900000, 0, 120000, 100000, 150000, 0.1, 60000, 0, 80000, 202312, 5000000, 1.2, 150000000, 8);
