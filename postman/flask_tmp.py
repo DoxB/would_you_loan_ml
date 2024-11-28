@@ -8,28 +8,28 @@ DATABASES = {
     "shinhan_loan": {
         "host": "regularmark.iptime.org",
         "port": 436,  # shinhan 컨테이너의 포트
-        "user": "root",
+        "user": "",
         "password": "",
         "database": "shinhan_loan"
     },
     "kookmin_loan": {
         "host": "regularmark.iptime.org",
         "port": 434,  # Kookmin 컨테이너의 포트
-        "user": "root",
+        "user": "",
         "password": "",
         "database": "kookmin_loan"
     },
     "etc_loans": {
         "host": "regularmark.iptime.org",
         "port": 437,  # ETC 컨테이너의 포트
-        "user": "root",
-        "password": "0000",
+        "user": "",
+        "password": "",
         "database": "etc_loan"  # 올바른 데이터베이스 이름
     },
     "woori_loans": {
         "host": "regularmark.iptime.org",
         "port": 435,  # Woori 컨테이너의 포트
-        "user": "root",
+        "user": "",
         "password": "",
         "database": "woori_loan"  # 올바른 데이터베이스 이름
     }
