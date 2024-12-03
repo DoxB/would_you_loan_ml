@@ -1,12 +1,12 @@
 1. root파일 안 logs 디렉토리 생성
-2. would_you_loan/src/main/resources/logback-spring.xml
+2. 내용추가 : would_you_loan/src/main/resources/logback-spring.xml
 ```
 #prometaus
 management.endpoints.web.exposure.include=beans,env,health,info,metrics,mappings,prometheus
 management.endpoint.health.show-details=always
 management.health.probes.enabled=true
 ```
-3. would_you_loan/pom.xml
+3. 내용추가 : would_you_loan/pom.xml
 ```
 <!-- Logstash-Logback Encoder -->
 <dependency>
