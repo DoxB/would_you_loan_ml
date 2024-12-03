@@ -21,7 +21,7 @@ management.health.probes.enabled=true
 </dependency>
 ```
 
-4. would_you_loan/src/main/resources/logback-spring.xml
+4. 파일 생성 : would_you_loan/src/main/resources/logback-spring.xml
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
