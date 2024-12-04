@@ -1,5 +1,5 @@
 1. root파일 안 logs 디렉토리 생성
-2. 내용추가 : would_you_loan/src/main/resources/logback-spring.xml
+2. 내용추가 : would_you_loan/src/main/resources/application.properties
 ```
 #prometaus
 management.endpoints.web.exposure.include=beans,env,health,info,metrics,mappings,prometheus
