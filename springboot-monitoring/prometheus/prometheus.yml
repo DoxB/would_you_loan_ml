@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+
+  - job_name: 'demo'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['host.docker.internal:8080'] # Docker 컨테이너 내부에서 실행 중인 애플리케이션이 로컬 호스트에서 접근할 수 있도록 하는 특수한 호스트 이름
+        labels:
+          application: demo
